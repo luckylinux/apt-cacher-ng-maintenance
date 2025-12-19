@@ -113,8 +113,8 @@ def main(*args):
     log_data_start = driver.find_element(By.ID, "logArea").text
 
     # Debug
-    print("Initial Response from apt-cacher-ng")
-    pprint.pprint(log_data_start)
+    print("Response from apt-cacher-ng at the Beginning of the Maintenance")
+    print(log_data_start)
 
     # Save to Log
     # ...
@@ -149,8 +149,8 @@ def main(*args):
     log_data_end = driver.find_element(By.ID, "logArea").text
 
     # Debug
-    print("Final Response from apt-cacher-ng")
-    pprint.pprint(log_data_end)
+    print("Intermediate Response from apt-cacher-ng after Deletion Request")
+    print(log_data_end)
 
     # Confirm Action (Delete)
     button_doDelete_confirm = driver.find_element(By.NAME, "doDeleteYes");
@@ -164,8 +164,8 @@ def main(*args):
     log_data_confirmed = driver.find_element(By.ID, "logArea").text
 
     # Debug
-    print("Confirmed Response from apt-cacher-ng")
-    pprint.pprint(log_data_confirmed)
+    print("Response from apt-cacher-ng after Deletion Confirmation")
+    print(log_data_confirmed)
 
     # Quit
     driver.quit()
