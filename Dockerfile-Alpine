@@ -1,4 +1,4 @@
-FROM localhost/container-registry-tools:alpine-latest
+FROM alpine:latest
 
 # Update Sources
 # Install required Packages
