@@ -81,7 +81,7 @@ apt-cacher-ng.MYDOMAIN.TLD {
 # Build
 The Container can simply be built using:
 ```
-./build.sh
+./build_container.sh
 ```
 
 Edit the Options to your liking.
